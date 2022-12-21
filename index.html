@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title> Калькулятор различных товаров </title>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body class = "body">
+    <div>
+        <h1>Калькулятор стоимости различных товаров</h1></div>
+
+        <form>
+            <label>Выберите товар: </label>
+            <select name="prodType">
+                <option value="1">Фрукты</option>
+                <option value="2">Одежда</option>
+                <option value="3">Пицца</option>
+            </select>
+
+            <div id="radios">
+                <label><input type="radio" name="prodOptions" value="option1" checked="checked">Место выдачи</label>
+                <label><input type="radio" name="prodOptions" value="option2" >Доставка курьером</label>
+            </div>
+
+            <div id="checkboxes">
+                Добавки: <br>
+                <label><input type="checkbox" name="prodM">+Тесто</label>
+                <label><input type="checkbox" name="prodM2">+Грибы</label>
+                <label><input type="checkbox" name="prodM3">+Мясо на выбор</label>
+            </div>
+
+            <div>Количество:<br></div>
+            <input id="input" type="number" min="0" max="100" step="1" value="0">
+            <br>
+            Оплатить товар:
+            <button id="button1">OK</button>
+            <div id="prodPrice"></div>
+
+        </form>
+        <script src="script.js"></script>
+</body>
+</html>
